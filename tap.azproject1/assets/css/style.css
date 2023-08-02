@@ -1,0 +1,131 @@
+/* Ваш стиль для шапки, навигации и категорий товаров остается неизменным */
+
+/* Обнуляем отступы и поля по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Стили для шапки */
+header {
+    background-color: #FF6200;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Стили для навигации */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Добавляем плавное изменение цвета */
+}
+
+nav a:hover {
+    color: #FF6200;
+}
+
+/* Стили для категорий товаров */
+.categories {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 1.5em;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categories ul li {
+    margin: 1em 0;
+}
+
+.categories a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s; /* Добавляем плавное изменение цвета */
+}
+
+.categories a:hover {
+    color: #FF6200;
+}
+
+/* Стили для объявлений */
+.ad-listings {
+    margin: 2em 0;
+    text-align: center;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Ваш стиль для шапки и навигации остается неизменным */
+
+/* Стили для скрытого каталога */
+.hidden-catalog {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    list-style: none;
+    padding: 0.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hidden-catalog li {
+    margin: 0.3em 0;
+}
+
+/* Добавляем стиль при нажатии на каталог */
+.catalog-toggle.active .hidden-catalog {
+    display: block;
+}
+
+/* Стили для логотипа */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding: 0 1em;
+}
+
+.logo img {
+    width: 40px; /* Подставьте подходящий размер */
+    height: 40px; /* Подставьте подходящий размер */
+    margin-right: 0.5em;
+}
+
+.logo span {
+    font-size: 1.2em;
+    color: white;
+}
